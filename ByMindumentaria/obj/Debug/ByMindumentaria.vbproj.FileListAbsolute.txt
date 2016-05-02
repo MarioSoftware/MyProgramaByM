@@ -1,0 +1,45 @@
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\bin\Debug\ByMindumentaria.exe
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\bin\Debug\ByMindumentaria.pdb
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\bin\Debug\ByMindumentaria.xml
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ResolveAssemblyReference.cache
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.ByMIndumentaria.resources
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.ClienteGrilla.resources
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.Resources.resources
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.vbproj.GenerateResource.Cache
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.exe
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.xml
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.pdb
+D:\SoftwareMario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.ClienteForm.resources
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.exe
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.xml
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.pdb
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\bin\Debug\ByMindumentaria.exe
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\bin\Debug\ByMindumentaria.pdb
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\bin\Debug\ByMindumentaria.xml
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ResolveAssemblyReference.cache
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.ByMIndumentaria.resources
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.ClienteForm.resources
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.ClienteGrilla.resources
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.Resources.resources
+F:\Beto Archivos de Personales\Software Mario\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Mario A. Pedernera\Escritorio\BackUPproyecto\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.exe
+C:\Documents and Settings\Mario A. Pedernera\Escritorio\BackUPproyecto\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.xml
+C:\Documents and Settings\Mario A. Pedernera\Escritorio\BackUPproyecto\ByMindumentaria\ByMindumentaria\obj\Debug\ByMindumentaria.pdb
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.exe
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.xml
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.pdb
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\bin\Debug\ByMindumentaria.exe
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\bin\Debug\ByMindumentaria.pdb
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\bin\Debug\ByMindumentaria.xml
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ResolveAssemblyReference.cache
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.ByMIndumentaria.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.ClienteForm.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.ClienteGrilla.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.Resources.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.vbproj.GenerateResource.Cache
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.FacturaForm.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.FacturaGrilla.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.PedidosForm.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.PedidosGrilla.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.DetallePedidoForm.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.DetallePedidoGrilla.resources

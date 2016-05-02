@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6967EF63-1333-464D-991B-D1D740AA7E1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ByMindumentaria.My.MyApplication</StartupObject>
+    <RootNamespace>ByMindumentaria</RootNamespace>
+    <AssemblyName>ByMindumentaria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ByMindumentaria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ByMindumentaria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ByMIndumentaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ByMIndumentaria.Designer.vb">
+      <DependentUpon>ByMIndumentaria.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteForm.Designer.vb">
+      <DependentUpon>ClienteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteGrilla.Designer.vb">
+      <DependentUpon>ClienteGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.vb" />
+    <Compile Include="Conexion.vb" />
+    <Compile Include="DetallePedido.vb" />
+    <Compile Include="DetallePedidoForm.Designer.vb">
+      <DependentUpon>DetallePedidoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallePedidoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallePedidoGrilla.Designer.vb">
+      <DependentUpon>DetallePedidoGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetallePedidoGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura.vb" />
+    <Compile Include="FacturaForm.Designer.vb">
+      <DependentUpon>FacturaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturaGrilla.Designer.vb">
+      <DependentUpon>FacturaGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pedidos.vb" />
+    <Compile Include="PedidosForm.Designer.vb">
+      <DependentUpon>PedidosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosGrilla.Designer.vb">
+      <DependentUpon>PedidosGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ByMIndumentaria.resx">
+      <DependentUpon>ByMIndumentaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteForm.resx">
+      <DependentUpon>ClienteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteGrilla.resx">
+      <DependentUpon>ClienteGrilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallePedidoForm.resx">
+      <DependentUpon>DetallePedidoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallePedidoGrilla.resx">
+      <DependentUpon>DetallePedidoGrilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaForm.resx">
+      <DependentUpon>FacturaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturaGrilla.resx">
+      <DependentUpon>FacturaGrilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosForm.resx">
+      <DependentUpon>PedidosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosGrilla.resx">
+      <DependentUpon>PedidosGrilla.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
