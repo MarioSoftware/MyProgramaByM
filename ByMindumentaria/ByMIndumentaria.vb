@@ -32,4 +32,9 @@
         DetallePedidoGrilla.Show()
 
     End Sub
+
+    Private Sub VerToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem1.Click
+        StockGrilla.Show()
+
+    End Sub
 End Class

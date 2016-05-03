@@ -43,3 +43,5 @@ F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debu
 F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.PedidosGrilla.resources
 F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.DetallePedidoForm.resources
 F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.DetallePedidoGrilla.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.StockForm.resources
+F:\usuarios\alumno\Escritorio\ByMIndumentaria.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.StockGrilla.resources

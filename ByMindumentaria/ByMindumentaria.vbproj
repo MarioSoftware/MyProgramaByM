@@ -141,6 +141,32 @@
     <Compile Include="PedidosGrilla.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Proveedores.vb" />
+    <Compile Include="ProveedoresForm.Designer.vb">
+      <DependentUpon>ProveedoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedoresGrilla.Designer.vb">
+      <DependentUpon>ProveedoresGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.vb" />
+    <Compile Include="StockForm.Designer.vb">
+      <DependentUpon>StockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockGrilla.Designer.vb">
+      <DependentUpon>StockGrilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ByMIndumentaria.resx">
@@ -175,6 +201,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PedidosGrilla.resx">
       <DependentUpon>PedidosGrilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm.resx">
+      <DependentUpon>StockForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockGrilla.resx">
+      <DependentUpon>StockGrilla.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
