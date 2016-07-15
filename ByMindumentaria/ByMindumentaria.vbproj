@@ -87,6 +87,7 @@
     </Compile>
     <Compile Include="Clientes.vb" />
     <Compile Include="Conexion.vb" />
+    <Compile Include="Detalle.vb" />
     <Compile Include="DetallePedido.vb" />
     <Compile Include="DetallePedidoForm.Designer.vb">
       <DependentUpon>DetallePedidoForm.vb</DependentUpon>
@@ -201,6 +202,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PedidosGrilla.resx">
       <DependentUpon>PedidosGrilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedoresForm.resx">
+      <DependentUpon>ProveedoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedoresGrilla.resx">
+      <DependentUpon>ProveedoresGrilla.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StockForm.resx">
       <DependentUpon>StockForm.vb</DependentUpon>

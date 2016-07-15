@@ -22,131 +22,153 @@ Partial Class FacturaForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ButtonGuardar = New System.Windows.Forms.Button
-        Me.ButtonCerrar = New System.Windows.Forms.Button
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.Button1 = New System.Windows.Forms.Button
+        Me.Button2 = New System.Windows.Forms.Button
+        Me.Button3 = New System.Windows.Forms.Button
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ButtonGuardar
+        'ComboBox1
         '
-        Me.ButtonGuardar.Location = New System.Drawing.Point(115, 272)
-        Me.ButtonGuardar.Name = "ButtonGuardar"
-        Me.ButtonGuardar.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonGuardar.TabIndex = 0
-        Me.ButtonGuardar.Text = "Guardar"
-        Me.ButtonGuardar.UseVisualStyleBackColor = True
-        '
-        'ButtonCerrar
-        '
-        Me.ButtonCerrar.Location = New System.Drawing.Point(300, 272)
-        Me.ButtonCerrar.Name = "ButtonCerrar"
-        Me.ButtonCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonCerrar.TabIndex = 1
-        Me.ButtonCerrar.Text = "Cerrar"
-        Me.ButtonCerrar.UseVisualStyleBackColor = True
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(112, 47)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(164, 24)
+        Me.ComboBox1.TabIndex = 0
         '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(227, 74)
+        Me.TextBox1.Location = New System.Drawing.Point(112, 19)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox1.Size = New System.Drawing.Size(90, 22)
+        Me.TextBox1.TabIndex = 1
         '
-        'TextBox2
+        'ComboBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(227, 118)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox2.TabIndex = 3
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(227, 157)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox3.TabIndex = 4
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"A", "B", "C"})
+        Me.ComboBox2.Location = New System.Drawing.Point(112, 77)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(90, 24)
+        Me.ComboBox2.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(154, 77)
+        Me.Label1.Location = New System.Drawing.Point(48, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 17)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "IdFactura"
+        Me.Label1.Size = New System.Drawing.Size(58, 17)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Numero"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(154, 123)
+        Me.Label2.Location = New System.Drawing.Point(48, 54)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 17)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "IdCliente"
+        Me.Label2.Size = New System.Drawing.Size(51, 17)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Cliente"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(154, 165)
+        Me.Label3.Location = New System.Drawing.Point(48, 84)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 17)
-        Me.Label3.TabIndex = 8
+        Me.Label3.TabIndex = 5
         Me.Label3.Text = "Tipo"
         '
-        'Label4
+        'GroupBox1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(154, 211)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 17)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Fecha"
+        Me.GroupBox1.Controls.Add(Me.DataGridView1)
+        Me.GroupBox1.Location = New System.Drawing.Point(38, 130)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(522, 255)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Detalles"
         '
-        'DateTimePicker1
+        'DataGridView1
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(225, 206)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(102, 22)
-        Me.DateTimePicker1.TabIndex = 10
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(13, 21)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(503, 228)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(51, 391)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(123, 25)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Agregar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(195, 391)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(123, 25)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Modificar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(337, 391)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(123, 25)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Eliminar"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'FacturaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(485, 335)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label4)
+        Me.ClientSize = New System.Drawing.Size(665, 522)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ButtonCerrar)
-        Me.Controls.Add(Me.ButtonGuardar)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "FacturaForm"
-        Me.Text = "FacturaForm"
+        Me.Text = "F A C T U R A"
+        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ButtonGuardar As System.Windows.Forms.Button
-    Friend WithEvents ButtonCerrar As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

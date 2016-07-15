@@ -33,15 +33,16 @@ Partial Class StockGrilla
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(220, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(25, 12)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(881, 391)
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView1.Size = New System.Drawing.Size(1020, 391)
         Me.DataGridView1.TabIndex = 0
         '
         'ButtonAgregar
         '
-        Me.ButtonAgregar.Location = New System.Drawing.Point(23, 41)
+        Me.ButtonAgregar.Location = New System.Drawing.Point(25, 409)
         Me.ButtonAgregar.Name = "ButtonAgregar"
         Me.ButtonAgregar.Size = New System.Drawing.Size(170, 43)
         Me.ButtonAgregar.TabIndex = 1
@@ -50,7 +51,7 @@ Partial Class StockGrilla
         '
         'ButtonModificar
         '
-        Me.ButtonModificar.Location = New System.Drawing.Point(23, 142)
+        Me.ButtonModificar.Location = New System.Drawing.Point(221, 409)
         Me.ButtonModificar.Name = "ButtonModificar"
         Me.ButtonModificar.Size = New System.Drawing.Size(170, 43)
         Me.ButtonModificar.TabIndex = 2
@@ -59,7 +60,7 @@ Partial Class StockGrilla
         '
         'ButtonEliminar
         '
-        Me.ButtonEliminar.Location = New System.Drawing.Point(23, 234)
+        Me.ButtonEliminar.Location = New System.Drawing.Point(420, 409)
         Me.ButtonEliminar.Name = "ButtonEliminar"
         Me.ButtonEliminar.Size = New System.Drawing.Size(170, 43)
         Me.ButtonEliminar.TabIndex = 3
@@ -68,7 +69,7 @@ Partial Class StockGrilla
         '
         'ButtonCerrar
         '
-        Me.ButtonCerrar.Location = New System.Drawing.Point(44, 360)
+        Me.ButtonCerrar.Location = New System.Drawing.Point(921, 409)
         Me.ButtonCerrar.Name = "ButtonCerrar"
         Me.ButtonCerrar.Size = New System.Drawing.Size(132, 43)
         Me.ButtonCerrar.TabIndex = 4
@@ -79,7 +80,7 @@ Partial Class StockGrilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1113, 463)
+        Me.ClientSize = New System.Drawing.Size(1065, 463)
         Me.Controls.Add(Me.ButtonCerrar)
         Me.Controls.Add(Me.ButtonEliminar)
         Me.Controls.Add(Me.ButtonModificar)

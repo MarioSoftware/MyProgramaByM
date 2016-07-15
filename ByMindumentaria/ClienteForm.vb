@@ -39,6 +39,7 @@
     End Sub
 
     Private Sub ButtonGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonGuardar.Click
+        Dim hoy As Date = CStr(My.Computer.Clock.LocalTime)
         Cliente.NombreP = TextBox2.Text
         Cliente.TelefonoP = TextBox3.Text
         Cliente.LocalidadP = TextBox4.Text
@@ -51,7 +52,7 @@
             ClienteP.LocalidadP = TextBox4.Text
             ClienteP.DireccionP = TextBox5.Text
             ClienteP.DniP = TextBox6.Text
-            ClienteP.RegistradoP = DateTimePicker1.Text
+            ClienteP.RegistradoP = hoy
             ClienteP.Insertar(ClienteP)
             Me.Close()
         Else
@@ -64,6 +65,7 @@
 
     Private Sub ClienteForm_FormClosed(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
         ClienteGrilla.Enabled = True
+        ByMIndumentaria.Enabled = True
 
     End Sub
 End Class

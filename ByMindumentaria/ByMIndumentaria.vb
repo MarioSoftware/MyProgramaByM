@@ -10,7 +10,8 @@
 
     Private Sub AgregearToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregearToolStripMenuItem.Click
         ClienteForm.GuardarTipoP = "AgregarCliente"
-        ClienteForm.Show()
+        ClienteForm.ShowDialog()
+
     End Sub
 
    
@@ -36,5 +37,19 @@
     Private Sub VerToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem1.Click
         StockGrilla.Show()
 
+    End Sub
+
+    Private Sub VerToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem2.Click
+        ProveedoresGrilla.ShowDialog()
+    End Sub
+
+    Private Sub AgregarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarToolStripMenuItem.Click
+        StockForm.GuardarTipoP = "AgregarStock"
+        StockForm.ShowDialog()
+    End Sub
+
+    Private Sub AgregarProveedorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarProveedorToolStripMenuItem.Click
+        ProveedoresForm.GuardarTipoP = "Agregar"
+        ProveedoresForm.ShowDialog()
     End Sub
 End Class

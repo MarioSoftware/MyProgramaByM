@@ -28,14 +28,12 @@ Partial Class ClienteForm
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.TextBox3 = New System.Windows.Forms.TextBox
         Me.TextBox4 = New System.Windows.Forms.TextBox
         Me.TextBox5 = New System.Windows.Forms.TextBox
         Me.TextBox6 = New System.Windows.Forms.TextBox
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
         Me.ButtonGuardar = New System.Windows.Forms.Button
         Me.ButtonCancelar = New System.Windows.Forms.Button
         Me.SuspendLayout()
@@ -100,21 +98,11 @@ Partial Class ClienteForm
         Me.Label6.TabIndex = 8
         Me.Label6.Text = "Dni"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(71, 278)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(77, 17)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Registrado"
-        '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(181, 25)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(64, 22)
         Me.TextBox1.TabIndex = 7
@@ -122,7 +110,7 @@ Partial Class ClienteForm
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(181, 64)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(132, 22)
         Me.TextBox2.TabIndex = 1
@@ -130,7 +118,7 @@ Partial Class ClienteForm
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(183, 103)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(132, 22)
         Me.TextBox3.TabIndex = 3
@@ -138,7 +126,7 @@ Partial Class ClienteForm
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(181, 144)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(132, 22)
         Me.TextBox4.TabIndex = 5
@@ -146,7 +134,7 @@ Partial Class ClienteForm
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(181, 188)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(132, 22)
         Me.TextBox5.TabIndex = 7
@@ -154,24 +142,15 @@ Partial Class ClienteForm
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(181, 225)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(132, 22)
         Me.TextBox6.TabIndex = 9
         '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(181, 270)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(132, 22)
-        Me.DateTimePicker1.TabIndex = 11
-        '
         'ButtonGuardar
         '
         Me.ButtonGuardar.Location = New System.Drawing.Point(97, 318)
-        Me.ButtonGuardar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonGuardar.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonGuardar.Name = "ButtonGuardar"
         Me.ButtonGuardar.Size = New System.Drawing.Size(100, 28)
         Me.ButtonGuardar.TabIndex = 12
@@ -181,7 +160,7 @@ Partial Class ClienteForm
         'ButtonCancelar
         '
         Me.ButtonCancelar.Location = New System.Drawing.Point(288, 318)
-        Me.ButtonCancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonCancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonCancelar.Name = "ButtonCancelar"
         Me.ButtonCancelar.Size = New System.Drawing.Size(100, 28)
         Me.ButtonCancelar.TabIndex = 13
@@ -195,21 +174,19 @@ Partial Class ClienteForm
         Me.ClientSize = New System.Drawing.Size(479, 361)
         Me.Controls.Add(Me.ButtonCancelar)
         Me.Controls.Add(Me.ButtonGuardar)
-        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ClienteForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ClienteForm"
@@ -223,14 +200,12 @@ Partial Class ClienteForm
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents ButtonGuardar As System.Windows.Forms.Button
     Friend WithEvents ButtonCancelar As System.Windows.Forms.Button
 End Class

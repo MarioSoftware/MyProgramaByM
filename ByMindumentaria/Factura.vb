@@ -42,12 +42,14 @@ Public Class Factura
 
     Public Sub Consultar(ByVal tabla As DataGridView)
         Abrir()
-        Dim sentencia As String = "Select * from Factura"
-        Dim comando As New SqlCommand(sentencia, ConexionP)
+
+        Dim comando As New SqlCommand("ConsultarFactura", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
         Dim DataAdapter As New SqlDataAdapter(comando)
         Dim DataTable As New DataTable
         DataAdapter.Fill(DataTable)
         tabla.DataSource = DataTable
+        tabla.Columns("IdCliente").Visible = False
         Cerrar()
 
     End Sub

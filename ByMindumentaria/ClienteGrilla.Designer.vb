@@ -93,7 +93,7 @@ Partial Class ClienteGrilla
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ClienteGrilla"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ClienteGrilla"
+        Me.Text = "Mis Clientes"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

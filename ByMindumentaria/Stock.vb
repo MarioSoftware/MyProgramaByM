@@ -6,8 +6,8 @@ Public Class Stock
     Inherits Conexion
     Private IdStock As Integer
     Private IdProveedor As Integer
-    Private Articulo As Integer
-    Private Seccion As Integer
+    Private Articulo As String
+    Private Seccion As String
     Private Talle_Medida As String
     Private Cantidad As Integer
     Private PrecioUnitario As Decimal
@@ -38,23 +38,23 @@ Public Class Stock
         End Set
     End Property
 
-    Public Property ArticuloP() As Integer
+    Public Property ArticuloP() As String
         Get
             Return Articulo
 
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As String)
             Articulo = value
 
         End Set
     End Property
 
-    Public Property SeccionP() As Integer
+    Public Property SeccionP() As String
         Get
             Return Seccion
 
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As String)
             Seccion = value
 
         End Set
@@ -127,13 +127,16 @@ Public Class Stock
 
     Public Sub Consultar(ByVal Tabla As DataGridView)
         Abrir()
-        Dim sentencia As String = "Select * from Stock"
-        Dim Comando As New SqlCommand(sentencia, ConexionP)
 
+        Dim Comando As New SqlCommand("ConsultarStock", ConexionP)
+        Comando.CommandType = CommandType.StoredProcedure
         Dim DataAdatper As New SqlDataAdapter(Comando)
         Dim DataTable As New DataTable
         DataAdatper.Fill(DataTable)
         Tabla.DataSource = DataTable
+        Tabla.Columns("IdProveedor").Visible = False
+        Tabla.Columns("Articulo").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+
         Cerrar()
 
     End Sub

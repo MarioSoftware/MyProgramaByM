@@ -33,23 +33,22 @@ Partial Class StockForm
         Me.Label9 = New System.Windows.Forms.Label
         Me.Label10 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
         Me.TextBox5 = New System.Windows.Forms.TextBox
         Me.TextBox6 = New System.Windows.Forms.TextBox
         Me.TextBox7 = New System.Windows.Forms.TextBox
         Me.TextBox8 = New System.Windows.Forms.TextBox
         Me.TextBox9 = New System.Windows.Forms.TextBox
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.ButtonGuardar = New System.Windows.Forms.Button
         Me.ButtonCancelar = New System.Windows.Forms.Button
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Enabled = False
         Me.Label1.Location = New System.Drawing.Point(40, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(54, 17)
@@ -61,9 +60,9 @@ Partial Class StockForm
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(40, 56)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 17)
+        Me.Label2.Size = New System.Drawing.Size(74, 17)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "IdProveedor"
+        Me.Label2.Text = "Proveedor"
         '
         'Label3
         '
@@ -140,78 +139,56 @@ Partial Class StockForm
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(301, 19)
+        Me.TextBox1.Location = New System.Drawing.Point(190, 19)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(161, 22)
         Me.TextBox1.TabIndex = 10
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(301, 56)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(161, 22)
-        Me.TextBox2.TabIndex = 11
-        '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(301, 100)
+        Me.TextBox3.Location = New System.Drawing.Point(190, 100)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(161, 22)
         Me.TextBox3.TabIndex = 12
         '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(301, 139)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(161, 22)
-        Me.TextBox4.TabIndex = 13
-        '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(301, 179)
+        Me.TextBox5.Location = New System.Drawing.Point(190, 179)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(161, 22)
         Me.TextBox5.TabIndex = 14
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(301, 211)
+        Me.TextBox6.Location = New System.Drawing.Point(190, 211)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(161, 22)
         Me.TextBox6.TabIndex = 15
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(301, 252)
+        Me.TextBox7.Location = New System.Drawing.Point(190, 252)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(161, 22)
         Me.TextBox7.TabIndex = 16
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(301, 290)
+        Me.TextBox8.Location = New System.Drawing.Point(190, 290)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(161, 22)
         Me.TextBox8.TabIndex = 17
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(301, 325)
+        Me.TextBox9.Location = New System.Drawing.Point(190, 325)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(161, 22)
         Me.TextBox9.TabIndex = 18
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(279, 367)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(208, 69)
-        Me.PictureBox1.TabIndex = 19
-        Me.PictureBox1.TabStop = False
-        '
         'ButtonGuardar
         '
-        Me.ButtonGuardar.Location = New System.Drawing.Point(56, 445)
+        Me.ButtonGuardar.Location = New System.Drawing.Point(60, 445)
         Me.ButtonGuardar.Name = "ButtonGuardar"
         Me.ButtonGuardar.Size = New System.Drawing.Size(186, 41)
         Me.ButtonGuardar.TabIndex = 20
@@ -220,29 +197,47 @@ Partial Class StockForm
         '
         'ButtonCancelar
         '
-        Me.ButtonCancelar.Location = New System.Drawing.Point(301, 455)
+        Me.ButtonCancelar.Location = New System.Drawing.Point(311, 445)
         Me.ButtonCancelar.Name = "ButtonCancelar"
         Me.ButtonCancelar.Size = New System.Drawing.Size(186, 41)
         Me.ButtonCancelar.TabIndex = 21
         Me.ButtonCancelar.Text = "Cancelar"
         Me.ButtonCancelar.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(190, 56)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(161, 24)
+        Me.ComboBox1.TabIndex = 22
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Remeras", "Pantalones", "Camperas", "Calzado", "Ropa Interior", "Boutic"})
+        Me.ComboBox2.Location = New System.Drawing.Point(190, 136)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(161, 24)
+        Me.ComboBox2.TabIndex = 23
+        '
         'StockForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(589, 508)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ButtonCancelar)
         Me.Controls.Add(Me.ButtonGuardar)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -256,7 +251,6 @@ Partial Class StockForm
         Me.Controls.Add(Me.Label1)
         Me.Name = "StockForm"
         Me.Text = "StockForm"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -272,15 +266,14 @@ Partial Class StockForm
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents ButtonGuardar As System.Windows.Forms.Button
     Friend WithEvents ButtonCancelar As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
 End Class

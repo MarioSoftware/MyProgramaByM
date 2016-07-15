@@ -1,6 +1,7 @@
 ﻿Public Class StockForm
     Dim GuardarTipo As String
     Dim Stock As New Stock
+    Dim proveedor As New Proveedores
 
     Public Property GuardarTipoP() As String
         Get
@@ -28,15 +29,30 @@
     Private Sub StockForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ByMIndumentaria.Enabled = False
         StockGrilla.Enabled = False
+        Try
+            proveedor.CargarComboProveedores(ComboBox1)
+        Catch ex As Exception
+            MessageBox.Show(ex.InnerException.ToString)
+        End Try
 
         If GuardarTipo = "AgregarStock" Then
-            Me.Text = "Nuevo Stock"
+            Me.Text = "Agregar Stock"
+            ComboBox1.SelectedValue = 0
+            TextBox3.Text = ""
+            ComboBox2.Text = ""
+            TextBox5.Text = ""
+            TextBox6.Text = ""
+            TextBox7.Text = ""
+            TextBox8.Text = ""
+            TextBox9.Text = ""
+
+
         Else
             Me.Text = "Modificar Stock"
             TextBox1.Text = Stock.IdStockP
-            TextBox2.Text = Stock.IdProveedorP
+            ComboBox1.SelectedValue = Stock.IdProveedorP
             TextBox3.Text = Stock.ArticuloP
-            TextBox4.Text = Stock.SeccionP
+            ComboBox2.Text = Stock.SeccionP
             TextBox5.Text = Stock.Talle_MedidaP
             TextBox6.Text = Stock.CatidadP
             TextBox7.Text = Stock.PrecioUnitarioP
@@ -52,9 +68,10 @@
     End Sub
 
     Private Sub ButtonGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonGuardar.Click
-        Stock.IdProveedorP = TextBox2.Text
+       
+        Stock.IdProveedorP = ComboBox1.SelectedValue
         Stock.ArticuloP = TextBox3.Text
-        Stock.SeccionP = TextBox4.Text
+        Stock.SeccionP = ComboBox2.Text
         Stock.Talle_MedidaP = TextBox5.Text
         Stock.CatidadP = TextBox6.Text
         Stock.PrecioUnitarioP = TextBox7.Text
@@ -62,15 +79,7 @@
         Stock.aPedirP = TextBox9.Text
 
         If GuardarTipoP = "AgregarStock" Then
-            Stock.IdProveedorP = TextBox2.Text
-            StockP.ArticuloP = TextBox3.Text
-            StockP.SeccionP = TextBox4.Text
-            StockP.Talle_MedidaP = TextBox5.Text
-            StockP.CatidadP = TextBox6.Text
-            StockP.PrecioUnitarioP = TextBox7.Text
-            StockP.MinimoP = TextBox8.Text
-            StockP.aPedirP = TextBox9.Text
-            StockP.Insertar(StockP)
+            Stock.Insertar(Stock)
             Me.Close()
         Else
             Stock.Modificar(StockP)

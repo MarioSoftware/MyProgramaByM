@@ -123,4 +123,16 @@ Public Class Clientes
         comando.ExecuteNonQuery()
         Cerrar()
     End Sub
+    Public Sub CargarComboClientes(ByVal combo As ComboBox)
+        Abrir()
+        Dim comando As New SqlCommand("CargarComboClientes", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        Dim DateTable As New Data.DataTable
+        Dim DataAdapter As New SqlDataAdapter(comando)
+        DataAdapter.Fill(DateTable)
+        combo.DataSource = DateTable
+        combo.ValueMember = "IdCliente"
+        combo.DisplayMember = "Nombre"
+        Cerrar()
+    End Sub
 End Class
