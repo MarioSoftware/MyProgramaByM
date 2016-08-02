@@ -85,6 +85,13 @@ Public Class Factura
         comando.ExecuteNonQuery()
         Cerrar()
     End Sub
+    Public Function Ultima()
+        Abrir()
+        Dim comando As New SqlCommand("UltimaFactura", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        Ultima = comando.ExecuteScalar
+        Cerrar()
+    End Function
 
 
 End Class

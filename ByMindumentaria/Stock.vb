@@ -195,4 +195,53 @@ Public Class Stock
         Cerrar()
 
     End Sub
+    Public Sub ConsultarDetalle(ByVal Tabla As DataGridView)
+        Abrir()
+
+        Dim Comando As New SqlCommand("ConsultarStock", ConexionP)
+        Comando.CommandType = CommandType.StoredProcedure
+        Dim DataAdatper As New SqlDataAdapter(Comando)
+        Dim DataTable As New DataTable
+        DataAdatper.Fill(DataTable)
+        Tabla.DataSource = DataTable
+        Tabla.Columns("IdProveedor").Visible = False
+        Tabla.Columns("Proveedor").Visible = False
+        Tabla.Columns("IdStock").Visible = False
+        Tabla.Columns("Minimo").Visible = False
+        Tabla.Columns("aPedir").Visible = False
+        'Tabla.Columns("Imagen").Visible = False
+
+
+        Cerrar()
+
+    End Sub
+    Public Sub Buscar(ByVal tabla As DataGridView, ByVal Busqueda As String)
+        Abrir()
+        Dim comando As New SqlCommand("Buscar", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        Dim DataAdapter As New SqlDataAdapter(comando)
+        Dim DataTable As New Data.DataTable
+        DataAdapter.Fill(DataTable)
+        tabla.DataSource = DataTable
+        tabla.Columns("IdProveedor").Visible = False
+        tabla.Columns("Proveedor").Visible = False
+        tabla.Columns("IdStock").Visible = False
+        tabla.Columns("Minimo").Visible = False
+        tabla.Columns("aPedir").Visible = False
+        'Tabla.Columns("Imagen").Visible = False
+        tabla.Columns("Articulo").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        Cerrar()
+    End Sub
+    Public Sub CargarComboStock(ByVal combo As ComboBox)
+        Abrir()
+        Dim comando As New SqlCommand("CargarComboStock", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        Dim DataTable As New Data.DataTable
+        Dim DataAdapter As New SqlDataAdapter(comando)
+        DataAdapter.Fill(DataTable)
+        combo.DataSource = DataTable
+        combo.ValueMember = "IdStock"
+        combo.DisplayMember = "Articulo"
+        Cerrar()
+    End Sub
 End Class

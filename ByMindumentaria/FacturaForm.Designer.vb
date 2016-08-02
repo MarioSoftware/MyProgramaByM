@@ -33,6 +33,8 @@ Partial Class FacturaForm
         Me.Button1 = New System.Windows.Forms.Button
         Me.Button2 = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
+        Me.Button4 = New System.Windows.Forms.Button
+        Me.Button5 = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,7 +43,7 @@ Partial Class FacturaForm
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(112, 47)
+        Me.ComboBox1.Location = New System.Drawing.Point(141, 50)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(164, 24)
         Me.ComboBox1.TabIndex = 0
@@ -49,7 +51,7 @@ Partial Class FacturaForm
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(112, 19)
+        Me.TextBox1.Location = New System.Drawing.Point(141, 22)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(90, 22)
         Me.TextBox1.TabIndex = 1
@@ -59,7 +61,7 @@ Partial Class FacturaForm
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"A", "B", "C"})
-        Me.ComboBox2.Location = New System.Drawing.Point(112, 77)
+        Me.ComboBox2.Location = New System.Drawing.Point(141, 80)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(90, 24)
         Me.ComboBox2.TabIndex = 2
@@ -67,7 +69,7 @@ Partial Class FacturaForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(48, 24)
+        Me.Label1.Location = New System.Drawing.Point(77, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 17)
         Me.Label1.TabIndex = 3
@@ -76,7 +78,7 @@ Partial Class FacturaForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(48, 54)
+        Me.Label2.Location = New System.Drawing.Point(77, 57)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(51, 17)
         Me.Label2.TabIndex = 4
@@ -85,7 +87,7 @@ Partial Class FacturaForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(48, 84)
+        Me.Label3.Location = New System.Drawing.Point(77, 87)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 17)
         Me.Label3.TabIndex = 5
@@ -94,7 +96,7 @@ Partial Class FacturaForm
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Location = New System.Drawing.Point(38, 130)
+        Me.GroupBox1.Location = New System.Drawing.Point(67, 133)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(522, 255)
         Me.GroupBox1.TabIndex = 6
@@ -112,7 +114,7 @@ Partial Class FacturaForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(51, 391)
+        Me.Button1.Location = New System.Drawing.Point(80, 394)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(123, 25)
         Me.Button1.TabIndex = 7
@@ -121,7 +123,7 @@ Partial Class FacturaForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(195, 391)
+        Me.Button2.Location = New System.Drawing.Point(263, 394)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(123, 25)
         Me.Button2.TabIndex = 8
@@ -130,18 +132,38 @@ Partial Class FacturaForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(337, 391)
+        Me.Button3.Location = New System.Drawing.Point(450, 394)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(123, 25)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Eliminar"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(141, 482)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(147, 28)
+        Me.Button4.TabIndex = 10
+        Me.Button4.Text = "Listo"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(386, 482)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(147, 28)
+        Me.Button5.TabIndex = 11
+        Me.Button5.Text = "Cancelar"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'FacturaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(665, 522)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -153,6 +175,7 @@ Partial Class FacturaForm
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Name = "FacturaForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "F A C T U R A"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -171,4 +194,6 @@ Partial Class FacturaForm
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

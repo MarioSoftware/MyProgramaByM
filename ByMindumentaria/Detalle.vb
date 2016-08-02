@@ -1,6 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class Detalle
+    Inherits Conexion
     Private IdDetalle As Integer
     Private IdFactura As Integer
     Private IdArticulo As Integer
@@ -55,7 +56,31 @@ Public Class Detalle
             Total = value
         End Set
     End Property
+    Public Sub Consultar(ByVal tabla As DataGridView)
+        Abrir()
+        Dim comando As New SqlCommand("ConsultarDetalle", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        Dim DataTable As New Data.DataTable
+        Dim DataAdapter As New SqlDataAdapter(comando)
+        DataAdapter.Fill(DataTable)
+        tabla.DataSource = DataTable
+        tabla.Columns("IdDetalle").Visible = False
+        Cerrar()
+    End Sub
+    Public Sub Insertar(ByVal detalle As Detalle)
+        Abrir()
+        Dim comando As New SqlCommand("insertarDetalle", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        comando.Parameters.AddWithValue("IdFactura", IdFacturaP)
+        comando.Parameters.AddWithValue("IdArticulo", IdArticuloP)
+        comando.Parameters.AddWithValue("PrecioUnitario", PrecioUnitarioP)
+        comando.Parameters.AddWithValue("Cantidad", CantidadP)
+        comando.Parameters.AddWithValue("PrecioTotal", TotalP)
+        comando.ExecuteNonQuery()
+        Cerrar()
 
+
+    End Sub
 
 
 

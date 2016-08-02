@@ -20,10 +20,7 @@
 
     End Sub
 
-    Private Sub VerToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem3.Click
-
-        FacturaGrilla.Show()
-    End Sub
+    
 
     Private Sub VerToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem4.Click
         PedidosGrilla.Show()
@@ -51,5 +48,14 @@
     Private Sub AgregarProveedorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AgregarProveedorToolStripMenuItem.Click
         ProveedoresForm.GuardarTipoP = "Agregar"
         ProveedoresForm.ShowDialog()
+    End Sub
+
+    Private Sub VerToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem3.Click
+        FacturaForm.ShowDialog()
+
+    End Sub
+
+    Private Sub BuscarPorToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarPorToolStripMenuItem3.Click
+        FacturaGrilla.ShowDialog()
     End Sub
 End Class

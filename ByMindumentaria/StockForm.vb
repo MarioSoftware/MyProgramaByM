@@ -27,8 +27,7 @@
 
 
     Private Sub StockForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        ByMIndumentaria.Enabled = False
-        StockGrilla.Enabled = False
+       
         Try
             proveedor.CargarComboProveedores(ComboBox1)
         Catch ex As Exception
@@ -89,7 +88,5 @@
     End Sub
 
 
-    Private Sub StockForm_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
-        StockGrilla.Enabled = True
-    End Sub
+  
 End Class

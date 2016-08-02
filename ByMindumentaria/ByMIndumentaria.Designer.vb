@@ -164,7 +164,7 @@ Partial Class ByMIndumentaria
         'NombreToolStripMenuItem1
         '
         Me.NombreToolStripMenuItem1.Name = "NombreToolStripMenuItem1"
-        Me.NombreToolStripMenuItem1.Size = New System.Drawing.Size(133, 24)
+        Me.NombreToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
         Me.NombreToolStripMenuItem1.Text = "Nombre"
         '
         'AgregarProveedorToolStripMenuItem
@@ -184,19 +184,19 @@ Partial Class ByMIndumentaria
         '
         Me.VerToolStripMenuItem3.Name = "VerToolStripMenuItem3"
         Me.VerToolStripMenuItem3.Size = New System.Drawing.Size(172, 24)
-        Me.VerToolStripMenuItem3.Text = "Ver"
+        Me.VerToolStripMenuItem3.Text = "Nueva Factura"
         '
         'BuscarPorToolStripMenuItem3
         '
         Me.BuscarPorToolStripMenuItem3.Name = "BuscarPorToolStripMenuItem3"
         Me.BuscarPorToolStripMenuItem3.Size = New System.Drawing.Size(172, 24)
-        Me.BuscarPorToolStripMenuItem3.Text = "Buscar por"
+        Me.BuscarPorToolStripMenuItem3.Text = "Ver"
         '
         'NuevaFacturaToolStripMenuItem
         '
         Me.NuevaFacturaToolStripMenuItem.Name = "NuevaFacturaToolStripMenuItem"
         Me.NuevaFacturaToolStripMenuItem.Size = New System.Drawing.Size(172, 24)
-        Me.NuevaFacturaToolStripMenuItem.Text = "Nueva Factura"
+        Me.NuevaFacturaToolStripMenuItem.Text = "Buscar"
         '
         'PedidosToolStripMenuItem
         '
