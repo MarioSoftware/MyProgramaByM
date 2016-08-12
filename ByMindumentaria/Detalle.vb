@@ -56,15 +56,16 @@ Public Class Detalle
             Total = value
         End Set
     End Property
-    Public Sub Consultar(ByVal tabla As DataGridView)
+    Public Sub Consultar(ByVal tabla As DataGridView, ByVal IdFactura As Integer)
         Abrir()
         Dim comando As New SqlCommand("ConsultarDetalle", ConexionP)
         comando.CommandType = CommandType.StoredProcedure
+        comando.Parameters.AddWithValue("IdFactura", IdFactura)
         Dim DataTable As New Data.DataTable
         Dim DataAdapter As New SqlDataAdapter(comando)
         DataAdapter.Fill(DataTable)
         tabla.DataSource = DataTable
-        tabla.Columns("IdDetalle").Visible = False
+
         Cerrar()
     End Sub
     Public Sub Insertar(ByVal detalle As Detalle)

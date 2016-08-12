@@ -50,6 +50,7 @@ Public Class Factura
         DataAdapter.Fill(DataTable)
         tabla.DataSource = DataTable
         tabla.Columns("IdCliente").Visible = False
+
         Cerrar()
 
     End Sub

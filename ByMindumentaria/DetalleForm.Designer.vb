@@ -22,16 +22,15 @@ Partial Class DetalleForm
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
         Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.Button2 = New System.Windows.Forms.Button
         Me.Button1 = New System.Windows.Forms.Button
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.Button3 = New System.Windows.Forms.Button
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.DataGridView2 = New System.Windows.Forms.DataGridView
@@ -47,16 +46,6 @@ Partial Class DetalleForm
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.ComboBox2.Location = New System.Drawing.Point(124, 21)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(40, 24)
-        Me.ComboBox2.TabIndex = 2
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -70,7 +59,6 @@ Partial Class DetalleForm
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -83,28 +71,19 @@ Partial Class DetalleForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(197, 48)
+        Me.TextBox1.Location = New System.Drawing.Point(157, 48)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(121, 24)
         Me.TextBox1.TabIndex = 8
         Me.TextBox1.Visible = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(105, 55)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 17)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Todo"
-        '
         'ComboBox1
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Remeras", "Pantalones", "Camperas", "Calzado", "Ropa Interior", "Boutic", ""})
-        Me.ComboBox1.Location = New System.Drawing.Point(197, 48)
+        Me.ComboBox1.Location = New System.Drawing.Point(157, 48)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 4
@@ -140,9 +119,9 @@ Partial Class DetalleForm
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.TextBox2)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Location = New System.Drawing.Point(490, 121)
         Me.GroupBox2.Name = "GroupBox2"
@@ -150,6 +129,14 @@ Partial Class DetalleForm
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "..."
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(152, 20)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(40, 22)
+        Me.TextBox2.TabIndex = 10
+        Me.TextBox2.Text = "1"
         '
         'Button3
         '
@@ -213,6 +200,7 @@ Partial Class DetalleForm
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(140, 24)
         Me.ComboBox3.TabIndex = 12
+        Me.ComboBox3.Visible = False
         '
         'DetalleForm
         '
@@ -239,13 +227,11 @@ Partial Class DetalleForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
@@ -256,4 +242,5 @@ Partial Class DetalleForm
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class
