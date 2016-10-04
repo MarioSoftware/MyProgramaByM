@@ -24,6 +24,27 @@
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Close()
+        If TextBox1.Text = Nothing Then
+            Close()
+        Else
+
+
+            Try
+                factura.Eliminar(factura.Ultima)
+                detalle.EliminarDetalle(factura.Ultima)
+                MessageBox.Show("La Factura ha sido ELIMINADA")
+                Close()
+            Catch ex As Exception
+                MessageBox.Show("No se pudo Eliminar la Factura")
+            End Try
+        End If
+       
+    
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        FacturaGrilla.Factura.Consultar(FacturaGrilla.DataGridView1)
+        Me.Close()
+
     End Sub
 End Class

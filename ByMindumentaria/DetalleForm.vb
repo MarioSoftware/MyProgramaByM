@@ -18,7 +18,7 @@
 
         stock.CargarComboStock(ComboBox3)
         stock.ConsultarDetalle(DataGridView1)
-        detalle.Consultar(DataGridView2, NumeroFacturaP)
+
 
 
 
@@ -32,7 +32,9 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         DetalleValores()
         detalle.Insertar(detalle)
-        detalle.Consultar(DataGridView2, NumeroFacturaP)
+        FacturaForm.detalle.Consultar(FacturaForm.DataGridView1, NumeroFacturaP)
+        Close()
+
     End Sub
     Public Sub DetalleValores()
         detalle.IdArticuloP = ComboBox3.SelectedValue
@@ -46,8 +48,13 @@
     Private Sub DataGridView1_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         ComboBox3.SelectedValue = DataGridView1.Item("IdStock", DataGridView1.CurrentRow.Index).Value
         DetalleValores()
+        GroupBox2.Text = DataGridView1.Item("Articulo", DataGridView1.CurrentRow.Index).Value
     End Sub
 
   
 
+    Private Sub GroupBox2_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox2.Enter
+
+    End Sub
+   
 End Class

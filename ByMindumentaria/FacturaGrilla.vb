@@ -1,5 +1,5 @@
 ﻿Public Class FacturaGrilla
-    Dim Factura As New Factura
+    Public Factura As New Factura
 
     Private Sub FacturaGrilla_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Factura.Consultar(DataGridView1)

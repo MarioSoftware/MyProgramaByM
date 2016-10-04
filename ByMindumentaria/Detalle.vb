@@ -56,6 +56,7 @@ Public Class Detalle
             Total = value
         End Set
     End Property
+
     Public Sub Consultar(ByVal tabla As DataGridView, ByVal IdFactura As Integer)
         Abrir()
         Dim comando As New SqlCommand("ConsultarDetalle", ConexionP)
@@ -82,7 +83,15 @@ Public Class Detalle
 
 
     End Sub
+    Public Sub EliminarDetalle(ByVal IdFactura As Integer)
+        Abrir()
+        Dim comando As New SqlCommand("EliminarDetalle", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        comando.Parameters.AddWithValue("IdFactura", IdFactura)
+        comando.ExecuteNonQuery()
+        Cerrar()
 
+    End Sub
 
 
 

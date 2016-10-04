@@ -31,19 +31,14 @@ Partial Class DetalleForm
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.Button3 = New System.Windows.Forms.Button
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.Button4 = New System.Windows.Forms.Button
+        Me.Button3 = New System.Windows.Forms.Button
         Me.Button5 = New System.Windows.Forms.Button
         Me.ComboBox3 = New System.Windows.Forms.ComboBox
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -110,22 +105,21 @@ Partial Class DetalleForm
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(54, 121)
+        Me.DataGridView1.Location = New System.Drawing.Point(24, 155)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(411, 246)
+        Me.DataGridView1.Size = New System.Drawing.Size(469, 229)
         Me.DataGridView1.TabIndex = 7
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Location = New System.Drawing.Point(490, 121)
+        Me.GroupBox2.Location = New System.Drawing.Point(515, 155)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(253, 246)
+        Me.GroupBox2.Size = New System.Drawing.Size(253, 229)
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "..."
@@ -138,15 +132,6 @@ Partial Class DetalleForm
         Me.TextBox2.TabIndex = 10
         Me.TextBox2.Text = "1"
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(41, 214)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(176, 23)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Seleccionar"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(27, 51)
@@ -155,39 +140,20 @@ Partial Class DetalleForm
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'DataGridView2
+        'Button3
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(6, 21)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(677, 95)
-        Me.DataGridView2.TabIndex = 9
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.DataGridView2)
-        Me.GroupBox3.Location = New System.Drawing.Point(54, 387)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(689, 122)
-        Me.GroupBox3.TabIndex = 9
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Esta Venta"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(186, 515)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(186, 27)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "Aceptar"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button3.Location = New System.Drawing.Point(195, 404)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(370, 32)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Seleccionar"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(398, 515)
+        Me.Button5.Location = New System.Drawing.Point(591, 23)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(186, 27)
+        Me.Button5.Size = New System.Drawing.Size(177, 27)
         Me.Button5.TabIndex = 11
         Me.Button5.Text = "Cancelar"
         Me.Button5.UseVisualStyleBackColor = True
@@ -206,11 +172,10 @@ Partial Class DetalleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(780, 547)
+        Me.ClientSize = New System.Drawing.Size(780, 602)
         Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
@@ -222,8 +187,6 @@ Partial Class DetalleForm
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -237,9 +200,6 @@ Partial Class DetalleForm
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
