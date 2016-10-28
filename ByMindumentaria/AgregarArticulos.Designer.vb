@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class DetalleForm
+Partial Class AgregarArticulos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -142,9 +142,9 @@ Partial Class DetalleForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(195, 404)
+        Me.Button3.Location = New System.Drawing.Point(65, 406)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(370, 32)
+        Me.Button3.Size = New System.Drawing.Size(642, 40)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Seleccionar"
         Me.Button3.UseVisualStyleBackColor = True
@@ -168,7 +168,7 @@ Partial Class DetalleForm
         Me.ComboBox3.TabIndex = 12
         Me.ComboBox3.Visible = False
         '
-        'DetalleForm
+        'AgregarArticulos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -179,7 +179,7 @@ Partial Class DetalleForm
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "DetalleForm"
+        Me.Name = "AgregarArticulos"
         Me.Text = "Agregar Articulos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

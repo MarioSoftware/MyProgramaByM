@@ -67,4 +67,4 @@ F:\usuarios\alumno\Escritorio\MyProgramaByM.git\trunk\ByMindumentaria\obj\Debug\
 F:\usuarios\alumno\Escritorio\MyProgramaByM.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.ProveedoresForm.resources
 F:\usuarios\alumno\Escritorio\MyProgramaByM.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.ProveedoresGrilla.resources
 F:\usuarios\alumno\Escritorio\MyProgramaByM.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.FacturaForm.resources
-F:\usuarios\alumno\Escritorio\MyProgramaByM.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.DetalleForm.resources
+F:\usuarios\alumno\Escritorio\MyProgramaByM.git\trunk\ByMindumentaria\obj\Debug\ByMindumentaria.AgregarArticulos.resources

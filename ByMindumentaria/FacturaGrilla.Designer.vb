@@ -80,7 +80,7 @@ Partial Class FacturaGrilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(771, 431)
+        Me.ClientSize = New System.Drawing.Size(773, 431)
         Me.Controls.Add(Me.ButtonCerrar)
         Me.Controls.Add(Me.ButtonEliminar)
         Me.Controls.Add(Me.ButtonModificar)

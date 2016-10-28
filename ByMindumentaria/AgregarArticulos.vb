@@ -1,4 +1,4 @@
-﻿Public Class DetalleForm
+﻿Public Class AgregarArticulos
     Dim detalle As New Detalle
     Dim stock As New Stock
     Dim cantidadDisponible As Integer
@@ -12,10 +12,10 @@
             NumeroFactura = value
         End Set
     End Property
-   
-    
-    Private Sub DetalleForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+
+    Private Sub DetalleForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        TextBox2.Text = 1
         stock.CargarComboStock(ComboBox3)
         stock.ConsultarDetalle(DataGridView1)
 
@@ -32,6 +32,7 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         DetalleValores()
         detalle.Insertar(detalle)
+        FacturaForm.Button4.Enabled = True
         FacturaForm.detalle.Consultar(FacturaForm.DataGridView1, NumeroFacturaP)
         Close()
 
@@ -51,10 +52,10 @@
         GroupBox2.Text = DataGridView1.Item("Articulo", DataGridView1.CurrentRow.Index).Value
     End Sub
 
-  
+
 
     Private Sub GroupBox2_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox2.Enter
 
     End Sub
-   
+
 End Class

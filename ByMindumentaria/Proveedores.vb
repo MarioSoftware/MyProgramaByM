@@ -83,6 +83,16 @@ Public Class Proveedores
         comando.ExecuteNonQuery()
         Cerrar()
     End Sub
+    Public Sub Eliminar(ByVal IdProveedor As Integer)
+
+        Abrir()
+        Dim comando As New SqlCommand("EliminarProveedor", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        comando.Parameters.AddWithValue("IdProveedor", IdProveedor)
+        comando.ExecuteNonQuery()
+        Cerrar()
+
+    End Sub
 
     Public Sub CargarComboProveedores(ByVal combo As ComboBox)
         Abrir()

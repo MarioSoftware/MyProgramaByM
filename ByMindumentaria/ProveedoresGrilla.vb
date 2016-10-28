@@ -33,4 +33,13 @@
         Modificar()
         ProveedoresForm.ShowDialog()
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+
+        proveedor.IdProveedorP = DataGridView1.Item("IdProveedor", DataGridView1.CurrentRow.Index).Value
+        proveedor.Eliminar(proveedor.IdProveedorP)
+        proveedor.Consultar(DataGridView1)
+
+    End Sub
 End Class

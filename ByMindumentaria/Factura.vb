@@ -72,7 +72,7 @@ Public Class Factura
         comando.Parameters.AddWithValue("IdFactura", Factura.IdFacturaP)
         comando.Parameters.AddWithValue("IdCliente", Factura.IdClienteP)
         comando.Parameters.AddWithValue("Tipo", Factura.TipoP)
-        comando.Parameters.AddWithValue("Fecha", Factura.FechaP)
+
         comando.ExecuteNonQuery()
 
         Cerrar()
@@ -93,6 +93,8 @@ Public Class Factura
         Ultima = comando.ExecuteScalar
         Cerrar()
     End Function
+
+    
 
 
 End Class
