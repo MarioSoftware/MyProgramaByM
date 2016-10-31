@@ -52,14 +52,9 @@
     End Sub
 
     Private Sub VerToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VerToolStripMenuItem3.Click
-
-
-
-        FacturaForm.detalle.ConsultarVacio(FacturaForm.DataGridView1)
-        FacturaForm.ComboBox2.SelectedItem = "A"
-        FacturaForm.ComboBox1.SelectedValue = 0
-        FacturaForm.TextBox1.Text = ""
         FacturaForm.ShowDialog()
+
+
     End Sub
 
     Private Sub BuscarPorToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarPorToolStripMenuItem3.Click

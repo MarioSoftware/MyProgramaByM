@@ -6,101 +6,71 @@
 
     Private Sub FacturaForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cliente.CargarComboClientes(ComboBox1)
-
-        If Modificar = True Then
-            Button4.Enabled = False
-            ComboBox1.SelectedValue = factura.IdClienteP
-            ComboBox2.SelectedItem = factura.TipoP
-            TextBox1.Text = factura.IdFacturaP
-          
-         
-        Else
-            ComboBox2.SelectedItem = "A"
-        End If
-
-
+       
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        factura.IdClienteP = ComboBox1.SelectedValue
-        factura.FechaP = CStr(My.Computer.Clock.LocalTime)
-        factura.TipoP = ComboBox2.Text
-        If TextBox1.Text = Nothing Then
-            factura.Insertar(factura)
-            AgregarArticulos.NumeroFacturaP = factura.Ultima
-        End If
-
-        TextBox1.Text = factura.Ultima
-        Button3.Enabled = True
-        AgregarArticulos.ShowDialog()
 
 
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        If Modificar = True Then
-            Modificar = False
-           
+
+
+        If TextBox1.Text = Nothing Then
             Me.Close()
         Else
 
-            If TextBox1.Text = Nothing Then
-                Close()
-            Else
-                Try
-                    detalle.EliminarDetalle(factura.Ultima)
-                    factura.Eliminar(factura.Ultima)
+            Dim result As DialogResult = MessageBox.Show("¿Deseas Eliminar la Factura?", "Advertencia !!", MessageBoxButtons.YesNo)
 
-                    MessageBox.Show("La Factura ha sido ELIMINADA")
-                    Close()
-                Catch ex As Exception
-                    MessageBox.Show("No se pudo Eliminar la Factura")
-                End Try
+            If (result = Windows.Forms.DialogResult.Yes) Then
+                factura.Eliminar(TextBox1.Text)
+                detalle.EliminarDetalle(TextBox1.Text)
+
+                Me.Close()
+            Else
+
             End If
+
+
         End If
-      
-       
-    
+
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        If Modificar = True Then
-            Modificar = False
-
-            factura.IdClienteP = ComboBox1.SelectedValue
-            factura.TipoP = ComboBox2.Text
-            factura.IdFacturaP = TextBox1.Text
-            factura.Modificar(factura)
-            ComboBox1.SelectedValue = 1
-            ComboBox2.SelectedItem = "A"
-            TextBox1.Text = ""
-            Me.Close()
-
-
-
-
-
-        End If
-        FacturaGrilla.Factura.Consultar(FacturaGrilla.DataGridView1)
         Me.Close()
-
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Try
-            detalle.IdDetalleP = DataGridView1.Item("IdDetalle", DataGridView1.CurrentRow.Index).Value
-            detalle.Eliminar2(detalle.IdDetalleP)
-            detalle.Consultar(DataGridView1, factura.Ultima)
+            Dim iddetalle As Integer = DataGridView1.Item("IdDetalle", DataGridView1.CurrentRow.Index).Value
+            detalle.Eliminar2(iddetalle)
+            detalle.Consultar(DataGridView1, TextBox1.Text)
         Catch ex As Exception
-            MessageBox.Show("No se pudo elimiar el detalle ")
+            MessageBox.Show("No se pudo Eliminar")
         End Try
-      
-
-
-
-
 
     End Sub
    
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        If TextBox1.Text = Nothing Then
+            factura.IdClienteP = ComboBox1.SelectedValue
+            factura.TipoP = ComboBox2.SelectedItem
+            factura.FechaP = CStr(My.Computer.Clock.LocalTime)
+
+            factura.Insertar(factura)
+            Dim ultimafactura As Integer = factura.Ultima
+            DetalleForm.Ultima = ultimafactura
+            TextBox1.Text = ultimafactura
+
+
+            DetalleForm.ShowDialog()
+        Else
+
+
+            DetalleForm.ShowDialog()
+
+        End If
+    End Sub
 End Class

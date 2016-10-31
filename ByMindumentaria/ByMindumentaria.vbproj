@@ -88,10 +88,10 @@
     <Compile Include="Clientes.vb" />
     <Compile Include="Conexion.vb" />
     <Compile Include="Detalle.vb" />
-    <Compile Include="AgregarArticulos.Designer.vb">
-      <DependentUpon>AgregarArticulos.vb</DependentUpon>
+    <Compile Include="DetalleForm.Designer.vb">
+      <DependentUpon>DetalleForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="AgregarArticulos.vb">
+    <Compile Include="DetalleForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DetallePedido.vb" />
@@ -185,8 +185,8 @@
     <EmbeddedResource Include="ClienteGrilla.resx">
       <DependentUpon>ClienteGrilla.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgregarArticulos.resx">
-      <DependentUpon>AgregarArticulos.vb</DependentUpon>
+    <EmbeddedResource Include="DetalleForm.resx">
+      <DependentUpon>DetalleForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetallePedidoForm.resx">
       <DependentUpon>DetallePedidoForm.vb</DependentUpon>

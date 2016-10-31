@@ -114,29 +114,7 @@ Public Class Detalle
         Cerrar()
 
     End Sub
-    Public Sub Consultar2(ByVal tabla As DataGridView)
-        Abrir()
-        Dim comando As New SqlCommand("ConsultarDetalle", ConexionP)
+  
 
-        comando.CommandType = CommandType.StoredProcedure
-        Dim DataAdapter As New SqlDataAdapter(comando)
-        Dim DataTable As New DataTable
-        DataAdapter.Fill(DataTable)
-        tabla.DataSource = DataTable
-        comando.ExecuteNonQuery()
-        Cerrar()
-    End Sub
-    Public Sub ConsultarVacio(ByVal tabla As DataGridView)
-        Abrir()
-        Dim comando As New SqlCommand("ConsultarVacio", ConexionP)
-        comando.CommandType = CommandType.StoredProcedure
 
-        Dim DataTable As New Data.DataTable
-        Dim DataAdapter As New SqlDataAdapter(comando)
-        DataAdapter.Fill(DataTable)
-        tabla.DataSource = DataTable
-        tabla.Columns("IdDetalle").Visible = False
-
-        Cerrar()
-    End Sub
 End Class

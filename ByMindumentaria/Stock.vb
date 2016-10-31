@@ -27,6 +27,7 @@ Public Class Stock
         End Set
     End Property
 
+
     Public Property IdProveedorP() As Integer
         Get
             Return IdProveedor
@@ -243,5 +244,15 @@ Public Class Stock
         combo.ValueMember = "IdStock"
         combo.DisplayMember = "Articulo"
         Cerrar()
+    End Sub
+    Public Sub RestarCantidad(ByVal IdStock As Integer, ByVal Disminuir As Integer)
+        Abrir()
+        Dim comando As New SqlCommand("DisminuirStock", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        comando.Parameters.AddWithValue("Disminuir", Disminuir)
+        comando.Parameters.AddWithValue("IdStock", IdStock)
+        comando.ExecuteNonQuery()
+        Cerrar()
+
     End Sub
 End Class
