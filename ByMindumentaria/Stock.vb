@@ -136,8 +136,6 @@ Public Class Stock
         DataAdatper.Fill(DataTable)
         Tabla.DataSource = DataTable
         Tabla.Columns("IdProveedor").Visible = False
-        Tabla.Columns("Articulo").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-
         Cerrar()
 
     End Sub

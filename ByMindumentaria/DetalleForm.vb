@@ -22,7 +22,7 @@
             detalle.Insertar(detalle)
             Disminuir = stockCantidad - detalle.CantidadP
             If Disminuir = 0 Then
-                stock.Eliminar(detalle.IdArticuloP)
+                stock.RestarCantidad(detalle.IdArticuloP, Disminuir)
 
             Else
                 stock.RestarCantidad(detalle.IdArticuloP, Disminuir)
@@ -32,6 +32,7 @@
 
         End If
         FacturaForm.detalle.Consultar(FacturaForm.DataGridView1, Ultima)
+        FacturaForm.TextBox2.Text = FacturaForm.detalle.TotalFactura(FacturaForm.TextBox1.Text)
    
 
 

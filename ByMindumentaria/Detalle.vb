@@ -114,6 +114,14 @@ Public Class Detalle
         Cerrar()
 
     End Sub
+    Public Function TotalFactura(ByVal IdFactura As Integer)
+        Abrir()
+        Dim comando As New SqlCommand("Total", ConexionP)
+        comando.CommandType = CommandType.StoredProcedure
+        comando.Parameters.AddWithValue("IdFactura", IdFactura)
+        TotalFactura = comando.ExecuteScalar
+        Cerrar()
+    End Function
   
 
 

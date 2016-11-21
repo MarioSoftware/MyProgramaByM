@@ -29,12 +29,13 @@ Partial Class FacturaForm
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.Button1 = New System.Windows.Forms.Button
         Me.Button3 = New System.Windows.Forms.Button
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.Button4 = New System.Windows.Forms.Button
         Me.Button5 = New System.Windows.Forms.Button
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -96,24 +97,32 @@ Partial Class FacturaForm
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Location = New System.Drawing.Point(31, 128)
+        Me.GroupBox1.Location = New System.Drawing.Point(34, 125)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(609, 285)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Detalles"
         '
-        'Button2
+        'Button1
         '
-        Me.Button2.Location = New System.Drawing.Point(206, 254)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(187, 25)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Modificar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button1.Location = New System.Drawing.Point(13, 254)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(273, 25)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Añadir"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(304, 254)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(282, 25)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "Eliminar"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -124,15 +133,6 @@ Partial Class FacturaForm
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(597, 227)
         Me.DataGridView1.TabIndex = 0
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(399, 254)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(187, 25)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Eliminar"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -152,20 +152,30 @@ Partial Class FacturaForm
         Me.Button5.Text = "Cancelar"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Label4
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 254)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(187, 25)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Añadir"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(40, 424)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(94, 17)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Total a Pagar"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Enabled = False
+        Me.TextBox2.Location = New System.Drawing.Point(141, 419)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox2.TabIndex = 13
         '
         'FacturaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(665, 522)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox1)
@@ -195,6 +205,7 @@ Partial Class FacturaForm
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class
